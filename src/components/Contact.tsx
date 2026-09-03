@@ -1,6 +1,5 @@
 import { FormEvent, useState } from 'react';
 import { ArrowUpRight, Check, Mail, MapPin } from 'lucide-react';
-import { supabase } from '@/lib/supabase';
 
 export function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -10,16 +9,8 @@ export function Contact() {
     event.preventDefault();
     setStatus('sending');
 
-    const { error } = await supabase.from('contact_submissions').insert({
-      name: form.name.trim(),
-      email: form.email.trim(),
-      message: form.message.trim(),
-    });
-
-    if (error) {
-      setStatus('error');
-      return;
-    }
+    // Simulate network request
+    await new Promise((resolve) => setTimeout(resolve, 1000));
 
     setForm({ name: '', email: '', message: '' });
     setStatus('success');

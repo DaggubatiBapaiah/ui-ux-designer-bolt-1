@@ -11,9 +11,11 @@ import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
 import { useReveal } from '@/hooks/useReveal';
 import { useTheme } from '@/hooks/useTheme';
+import { useScrollColor } from '@/hooks/useScrollColor';
 
 function App() {
   const { theme, toggle } = useTheme();
+  useScrollColor();
   const revealRef = useReveal<HTMLDivElement>();
 
   useEffect(() => {

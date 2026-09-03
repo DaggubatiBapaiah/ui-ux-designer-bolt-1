@@ -45,7 +45,7 @@ export function SelectedWork() {
               key={project.id}
               onClick={() => setSelected(project)}
               data-cursor="Open"
-              className={`reveal group relative block w-full overflow-hidden rounded-3xl border border-[var(--border)] text-left transition-all duration-500 hover:border-[var(--text-muted)] ${`reveal-delay-${(i % 4) + 1}`}`}
+              className={`reveal group relative block w-full overflow-hidden rounded-3xl border border-[var(--border)] text-left transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1 hover:border-accent-600/50 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_20px_40px_-15px_rgba(255,255,255,0.05)] ${`reveal-delay-${(i % 4) + 1}`}`}
             >
               <div className="grid lg:grid-cols-12">
                 {/* Image */}

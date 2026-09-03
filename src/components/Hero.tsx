@@ -293,7 +293,7 @@ export function Hero() {
               <a
                 href="#work"
                 data-cursor="View"
-                className="group flex items-center gap-2 rounded-full bg-[var(--text)] px-7 py-3.5 text-sm font-medium text-[var(--bg)] transition-transform hover:scale-[1.03] active:scale-95"
+                className="group flex items-center gap-2 rounded-full bg-[var(--text)] px-7 py-3.5 text-sm font-medium text-[var(--bg)] transition-all duration-300 hover:scale-[1.05] hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(0,0,0,0.3)] dark:hover:shadow-[0_10px_20px_-10px_rgba(255,255,255,0.2)] active:scale-95"
               >
                 View selected work
                 <ArrowDown
